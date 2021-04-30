@@ -1,0 +1,47 @@
+.check-out{
+    .totalPrice {
+        float: right;
+        font-size: 15px;
+        color: grey;
+        position: absolute;
+        right: 20px;
+        top: 100px;
+        span {
+            color: #31e0ba;
+            font-size: 20px;
+            font-weight: 700;
+          }
+      }
+      .row {
+        border-bottom: 1px solid #e6e6e6;
+        padding-bottom: 10px;
+        .image {
+            border: 5px solid #31e0ba;
+          }
+        .name {
+            font-size: 15px;
+            font-weight: 700;
+            color: grey;
+        }
+        .price {
+            font-size: 20px;
+            color: grey;
+            &::first-letter {
+                font-size: 23px;
+                font-weight: 900;
+                color: #31e0ba;
+            }
+        }
+        button {
+            background-color: #31e0ba;
+            padding: 6px;
+            padding-left: 25px;
+            padding-right: 25px;
+            border: none;
+            border-radius: 90px;
+            font-size: 16px;
+            color: #ededed;
+            letter-spacing: 1px;
+        }
+    }
+} 

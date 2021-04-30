@@ -1,0 +1,66 @@
+.menu-item{
+    .far{
+        margin: 2px;
+        color: #4ED7B7;
+        font-size: 12px;
+    }
+    .name{
+        font-size: 13px;
+        color: grey;
+    }
+    .price{
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .saleY {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: black;
+        color: white;
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 90px;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+      .buttonContainer{
+          text-align: center !important;
+          margin-left: 0 auto;
+      }
+      button{
+        width: 50%;
+        opacity: 0.7;
+        position: absolute;
+        bottom:135px;
+        left: 25%;
+        display: none;
+        background-color: black;
+        color: white;
+        padding: 6px;
+        padding-left: 14px;
+        padding-right: 14px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 1px 1px 2px black;
+        font-size: 13px;
+        text-align: center;
+        &:hover{
+            color: white;
+        }
+      }
+    &:hover{
+        img{
+            opacity: 0.8;
+        }
+        button{
+            opacity: 0.85;
+            display: inline;
+        text-align: center !important;
+
+        }
+    }
+}

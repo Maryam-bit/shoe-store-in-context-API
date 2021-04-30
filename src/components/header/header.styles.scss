@@ -1,0 +1,112 @@
+.logo{
+    width: 11rem;
+}
+
+.navbar{
+    .nav-item{
+        padding-right: 20px !important;
+        font-weight: 400;
+        &:hover{
+            color: #4ED7B7;
+            cursor: pointer;
+        }
+    }
+    a{
+        color:black !important;
+        text-decoration: none !important;
+    }
+
+    .counter{
+        position: relative;
+        bottom: 37px;
+        left: 14px;
+
+        .count{
+            background-color: #4ED7B7;
+            padding: 3px 7px 3px 7px;
+            border-radius: 90px;
+            color: white;
+            font-size: 8px;
+            font-weight: bolder;
+            display: inline;
+        }
+    }
+
+    .btn:focus{
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    .dropdown{
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: lightgray;
+            border-radius: 49px;
+        }   
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgb(182, 182, 182);
+        }
+        .dropdown-menu{
+           
+            .items{
+                width: 300px !important;
+                height: 245px !important;
+                overflow-y: scroll;
+            
+            
+                .image{
+                    width: 32%;
+                    margin: 0px !important;
+                    display: inline-block;
+                    img{
+                        margin-top: -20px !important;
+                        width: 60px;
+                    }
+                }
+                .details{
+                    width: 68%;
+                    display: inline-block;
+                    span{
+                        display: block;
+                    }
+                    .name{
+                        color: grey;
+                        font-size: 13px;
+                    }
+                    .price{
+                        font-size: 13px;
+                        font-weight: 500;
+                    }
+                }
+            }
+            .dropdown-item{
+                padding-bottom: 8px;
+                padding-top: 19px;
+                border-bottom: 1px solid lightgrey;
+                .moreProd {
+                    text-align: center;
+                    button {
+                        background-color: black;
+                        color: white;
+                        padding: 6px;
+                        padding-left: 14px;
+                        padding-right: 14px;
+                        border: none;
+                        border-radius: 6px;
+                        box-shadow: 1px 1px 2px black;
+                        font-size: 13px;
+                        // margin-top: auto;
+                    }
+                  }
+        }
+        .bbtn-droopdown{
+            border-bottom: none !important;
+        }
+    }
+}
+}
