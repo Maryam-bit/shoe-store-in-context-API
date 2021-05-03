@@ -1,10 +1,33 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
+import { CartContext, CounterContext } from '../../config/context'
 import './menu-item.styles.scss'
-const MenuItem = ({ item }) => {
-  const { name, imageUrl, price, sale } = item
-  console.log('itemmmmm', item)
-  return (
 
+const MenuItem = ({ item }) => {
+  const { name, imageUrl, price, sale, id } = item
+  let count = useContext(CounterContext);
+  let [cart, setCart] = useContext(CartContext);
+
+
+  // add to cart
+  const addToCart = (item) => {
+    let newCart = [...cart];
+    let itemInCart = newCart.find((data) => item.name === data.name)
+    if (itemInCart) {
+      itemInCart.quantity++;
+    }
+    else {
+      count[1](++count[0]);
+      itemInCart = {
+        ...item,
+        quantity: 1
+      }
+      newCart.push(itemInCart)
+    }
+    setCart(newCart)
+    console.log('cart', cart)
+  }
+
+  return (
     <>
       <div className="col-lg-3 col-md-6 col-sm-6 col-12 menu-item">
         <div className="card p-0 m-2 mt-4">
@@ -21,14 +44,13 @@ const MenuItem = ({ item }) => {
             <i className="far fa-star"></i>
             <span className="name d-block">{name}</span>
             <span className="price">${price}</span>
-            {/* <p className={sale ? "saleY" : "saleN"}>
+            <p className={sale ? "saleY" : "saleN"}>
               {sale}
-            </p> */}
+            </p>
           </div>
-          <button className='btn'>Add to Cart</button>
+          <button className={!sale ? "btn" : "btn2"} onClick={() => addToCart(item)}>Add to Cart</button>
         </div>
       </div>
-
     </>
   )
 }

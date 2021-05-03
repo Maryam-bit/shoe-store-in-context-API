@@ -32,7 +32,11 @@
                 color: #31e0ba;
             }
         }
-        button {
+        .btn{
+            border: none;
+            background-color: none;
+        }
+        .removeItem {
             background-color: #31e0ba;
             padding: 6px;
             padding-left: 25px;
@@ -43,5 +47,12 @@
             color: #ededed;
             letter-spacing: 1px;
         }
+    }
+    p{
+        padding: 110px 0;
+        font-family: 'Dosis', sans-serif;
+        text-align: center !important;
+        font-size:20px;
+        color: grey !important;
     }
 } 

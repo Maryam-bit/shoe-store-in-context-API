@@ -7,11 +7,10 @@ import './homepage.styles.scss'
 const Homepage = () => {
     return (
         <div className='home-page'>
-            <Slider/>
+            <Slider />
             <Heading />
             <CollectionOverview />
-            <div  className="moreProd">
-            {/* <button>More Products</button> */}
+            <div className="moreProd">
             </div>
         </div>
     )

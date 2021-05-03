@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
 .logo{
     width: 11rem;
 }
@@ -84,11 +83,6 @@
                         font-weight: 500;
                     }
                 }
-                p{
-                    padding: 110px 0;
-                    font-family: 'Dosis', sans-serif;
-                    text-align: center !important;
-                }
             }
             .dropdown-item{
                 padding-bottom: 8px;
@@ -110,9 +104,9 @@
                     }
                 }
             }
-            .bbtn-droopdown{
-                border-bottom: none !important;
-            }
+        .bbtn-droopdown{
+            border-bottom: none !important;
         }
     }
+}
 }

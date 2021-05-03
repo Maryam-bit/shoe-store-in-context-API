@@ -52,6 +52,29 @@
             color: white;
         }
       }
+
+      .btn2{
+        width: 50%;
+        opacity: 0.7;
+        position: absolute;
+        bottom:115px;
+        left: 25%;
+        display: none;
+        background-color: black;
+        color: white;
+        padding: 6px;
+        padding-left: 14px;
+        padding-right: 14px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 1px 1px 2px black;
+        font-size: 13px;
+        text-align: center;
+        &:hover{
+            color: white;
+        }
+      }
+
     &:hover{
         img{
             opacity: 0.8;

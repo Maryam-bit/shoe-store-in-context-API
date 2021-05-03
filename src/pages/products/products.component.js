@@ -7,7 +7,7 @@ const Products = () => {
     return (
         <div>
             <div className="container-fluid my-5 mt-5 pt-5">
-            <Heading /><br/>
+                <Heading /><br />
 
                 <div className="row ml-5 mr-5">
                     {SHOE_DATA.map(item => {

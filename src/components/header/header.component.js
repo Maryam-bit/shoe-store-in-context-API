@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useState, useContext } from 'react'
 import logo from '../../assets/loggo.png'
 import './header.styles.scss'
 import { Link } from "react-router-dom";
-import shoeImage from '../../assets/shoe.jpg'
+import { CounterContext, CartContext } from '../../config/context'
+import Dropdown from '../dropdown/dropdown.component'
 
 const Header = () => {
+    let count = useContext(CounterContext)
+    let [cart, setCart] = useContext(CartContext)
+
     return (
         <div>
             <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow ">
@@ -32,75 +36,23 @@ const Header = () => {
                                 <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i className='fa fa-shopping-cart'></i>
                                     <div className="counter">
-                                        <p className='count'>1</p>
+                                        <p className='count'>{count[0]}</p>
                                     </div>
                                 </button>
 
                                 <div class="dropdown-menu mt-4" aria-labelledby="dropdownMenuButton">
                                     <div className='items'>
-                                        <div className="dropdown-item">
-                                            <div className="image">
-                                                <img src={shoeImage} />
-                                            </div>
-                                            <div className="details">
-                                                <span className='name'>Brown shoes</span>
-                                                <span className='price'>1 X $22</span>
-                                            </div>
-                                        </div>
-                                        <div className="dropdown-item">
-                                            <div className="image">
-                                                <img src={shoeImage} />
-                                            </div>
-                                            <div className="details">
-                                                <span className='name'>Brown shoes</span>
-                                                <span className='price'>1 X $22</span>
-                                            </div>
-                                        </div>
-                                        <div className="dropdown-item">
-                                            <div className="image">
-                                                <img src={shoeImage} />
-                                            </div>
-                                            <div className="details">
-                                                <span className='name'>Brown shoes</span>
-                                                <span className='price'>1 X $22</span>
-                                            </div>
-                                        </div>
-                                        <div className="dropdown-item">
-                                            <div className="image">
-                                                <img src={shoeImage} />
-                                            </div>
-                                            <div className="details">
-                                                <span className='name'>Brown shoes</span>
-                                                <span className='price'>1 X $22</span>
-                                            </div>
-                                        </div>
-                                        <div className="dropdown-item">
-                                            <div className="image">
-                                                <img src={shoeImage} />
-                                            </div>
-                                            <div className="details">
-                                                <span className='name'>Brown shoes</span>
-                                                <span className='price'>1 X $22</span>
-                                            </div>
-                                        </div>
-                                        <div className="dropdown-item">
-                                            <div className="image">
-                                                <img src={shoeImage} />
-                                            </div>
-                                            <div className="details">
-                                                <span className='name'>Brown shoes</span>
-                                                <span className='price'>1 X $22</span>
-                                            </div>
-                                        </div>
-                                        <div className="dropdown-item">
-                                            <div className="image">
-                                                <img src={shoeImage} />
-                                            </div>
-                                            <div className="details">
-                                                <span className='name'>Brown shoes</span>
-                                                <span className='price'>1 X $22</span>
-                                            </div>
-                                        </div>
+                                        {
+                                            cart.length ? (
+                                                cart.map((item) => {
+                                                    return (
+                                                        <Dropdown key={item.id} item={item} />
+                                                    )
+                                                })
+                                            )
+                                                :
+                                                <p>Your cart is empty</p>
+                                        }
                                     </div>
 
                                     <div className="dropdown-item bbtn-droopdown">
