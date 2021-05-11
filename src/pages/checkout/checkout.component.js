@@ -108,7 +108,6 @@ const Checkout = () => {
                         :
                         null
                     }
-
                 </>
             </div>
         </div>
