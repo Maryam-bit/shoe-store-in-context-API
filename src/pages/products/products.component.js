@@ -6,15 +6,13 @@ import Heading from '../../components/heading/heading.component'
 const Products = () => {
     return (
         <div>
-            <div className="container-fluid my-5 mt-5 pt-5">
-                <Heading /><br />
+            <div className="container-fluid my-5 pt-3">
+                <Heading trendingShoes/><br />
 
                 <div className="row ml-5 mr-5">
-                    {SHOE_DATA.map(item => {
+                    {SHOE_DATA.map(item => {        // map through all shoe collections
                         return (
-                            <>
                                 <MenuItem key={item.id} item={item} />
-                            </>
                         )
                     })}
                 </div>

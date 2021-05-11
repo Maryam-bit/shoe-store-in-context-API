@@ -1,9 +1,10 @@
-import React, { useState, useContext } from 'react'
+import React, { useContext } from 'react'
 import logo from '../../assets/loggo.png'
-import './header.styles.scss'
 import { Link } from "react-router-dom";
 import { CounterContext, CartContext } from '../../config/context'
 import Dropdown from '../dropdown/dropdown.component'
+import Button from '../button/button.component'
+import './header.styles.scss'
 
 const Header = () => {
     let count = useContext(CounterContext)
@@ -12,35 +13,36 @@ const Header = () => {
     return (
         <div>
             <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow ">
-                <img className="logo ml-3" src={logo} />
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <Link to='/'><img className="logo ml-3" src={logo} alt='logo' /></Link>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto pt-4 mr-2">
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav ml-auto pt-4 mr-2">
                         <Link to='/'>
-                            <li class="nav-item active">
+                            <li className="nav-item active">
                                 <p>Home</p>
                             </li>
                         </Link>
 
                         <Link to='/products'>
-                            <li class="nav-item">
+                            <li className="nav-item">
                                 <p>Products</p>
                             </li>
                         </Link>
 
                         <li className="nav-item">
-                            <div class="dropdown m-0 p-0 dropleft">
-                                <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {/* cart dropdown */}
+                            <div className="dropdown m-0 p-0 dropleft">
+                                <button className="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i className='fa fa-shopping-cart'></i>
                                     <div className="counter">
                                         <p className='count'>{count[0]}</p>
                                     </div>
                                 </button>
 
-                                <div class="dropdown-menu mt-4" aria-labelledby="dropdownMenuButton">
+                                <div className="dropdown-menu mt-4" aria-labelledby="dropdownMenuButton">
                                     <div className='items'>
                                         {
                                             cart.length ? (
@@ -58,7 +60,7 @@ const Header = () => {
                                     <div className="dropdown-item bbtn-droopdown">
                                         <div className="moreProd">
                                             <Link to='/checkout'>
-                                                <button>Go To CheckOut</button>
+                                                <Button value='Go To CheckOut' />
                                             </Link>
                                         </div>
                                     </div>
@@ -66,6 +68,7 @@ const Header = () => {
                                 </div>
                             </div>
                         </li>
+
                     </ul>
                 </div>
             </nav>

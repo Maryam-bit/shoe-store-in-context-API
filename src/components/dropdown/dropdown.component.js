@@ -1,12 +1,11 @@
-import React from 'react'
-import './dropdown.styles.scss'
+import React from 'react';
 
 const Dropdown = ({ item }) => {
-    const { name, imageUrl, price, id, quantity } = item
+    const { name, imageUrl, price, quantity } = item;
     return (
         <div className="dropdown-item">
             <div className="image">
-                <img src={imageUrl} />
+                <img src={imageUrl} alt='shoes'/>
             </div>
             <div className="details">
                 <span className='name'>{name}</span>

@@ -1,0 +1,50 @@
+.personal-information-container{
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
+     .card{
+        .card-body{
+            background-color: #f5f7f7;
+            input{
+                border: none;
+                background-color: #f5f7f7;
+                box-shadow: 0 4px 2px -2px #c5c7c5,
+                0px 0px 5px #c5c7c5,
+                -4px -4px 4px white,
+                inset 5px 5px 4px white;
+                border-radius: 5px;
+                color: #6b968b;
+                width: 100%;
+                padding: 10px 10px 10px 10px;
+                &:focus{
+                    outline: none;
+                }
+            }
+            label{
+                display: block;
+                margin-top: .9rem;
+                margin-bottom: 0.2rem;
+                font-size: 15px;
+            }
+            button{
+                background-color: black;
+                color: white;
+                padding: 6px;
+                padding-left: 19px;
+                padding-right: 19px;
+                border: none;
+                border-radius: 6px;
+                box-shadow: 1px 1px 2px black;
+                font-size: 15px;
+            }
+            .error-message{
+                font-size: 13px;
+                color: rgb(209, 113, 113);
+                margin-top: 3px;
+                margin-left: 2px;
+            }
+        }
+        .card-header{
+            text-align: center;
+        }
+    }
+}

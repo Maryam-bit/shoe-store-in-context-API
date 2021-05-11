@@ -3,9 +3,6 @@
         float: right;
         font-size: 15px;
         color: grey;
-        position: absolute;
-        right: 20px;
-        top: 100px;
         span {
             color: #31e0ba;
             font-size: 20px;
@@ -17,6 +14,7 @@
         padding-bottom: 10px;
         .image {
             border: 5px solid #31e0ba;
+            margin-top: 10px;
           }
         .name {
             font-size: 15px;
@@ -35,6 +33,7 @@
         .btn{
             border: none;
             background-color: none;
+            
         }
         .removeItem {
             background-color: #31e0ba;
@@ -55,4 +54,55 @@
         font-size:20px;
         color: grey !important;
     }
+    .test-warning{
+        text-align: center;
+        margin-top: 40px;
+        font-size: 17px;
+        color: rgb(209, 113, 113);
+      }
+    .paynow-btn{
+        float: right;
+        background-color: black;
+        color: white;
+        padding: 6px;
+        padding-left: 14px;
+        padding-right: 14px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 1px 1px 2px black;
+        font-size: 13px;
+    }
+    .btn-right{
+        float: right !important;
+    }
 } 
+
+
+@media(max-width:500px){
+    .check-out{
+        .row{
+            .image {
+                width: 70px !important;
+                margin-top: 1.2rem;
+              }
+              .name {
+                font-size: 13.5px;
+            }
+            .price {
+                font-size: 17px;
+                color: grey;
+                &::first-letter {
+                    font-size: 20px;
+                    font-weight: 900;
+                    color: #31e0ba;
+                }
+            }
+            .btn{
+                font-size: 10px;
+            }
+            span{
+                font-size: 11px;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.button-container{
+    .btn{
+        background-color: black;
+        color: white;
+        padding: 6px;
+        padding-left: 19px;
+        padding-right: 19px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 1px 1px 2px black;
+        font-size: 15px;
+        &:hover{
+            color: lightgrey;
+        }
+    }
+}

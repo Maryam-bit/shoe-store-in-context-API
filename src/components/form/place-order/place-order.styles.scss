@@ -1,0 +1,110 @@
+.place-order-container{
+    .card-body{
+        background-color: #f5f7f7;
+        .item-row{
+            border: 1px solid #e8e8e8;
+            box-shadow: 2px 3px 6px #c9c9c9;
+            padding-bottom: 8px;
+            .name {
+                font-size: 15px;
+                font-weight: 700;
+                color: grey;
+            }
+            .brackets{
+                font-size: 20px;
+            }
+            .quantity{
+                font-size: 17px;
+                font-weight: 900;
+                color: #31e0ba;
+            }
+            .price {
+                font-size: 20px;
+                color: grey;
+                margin-top: 3px;
+                &::first-letter {
+                    font-size: 24px;
+                    font-weight: 900;
+                    color: #31e0ba;
+                }
+            }
+        }
+    }
+
+    .totalPrice {
+        float: right;
+        font-size: 15px;
+        color: grey;
+        span {
+            color: #31e0ba;
+            font-size: 20px;
+            font-weight: 700;
+          }
+      }
+    .message{
+        padding: 110px 0;
+        font-family: 'Dosis', sans-serif;
+        text-align: center !important;
+        font-size:20px;
+        color: grey !important;
+    }
+    .shipping-details{
+        border: 1px solid #e8e8e8;
+        box-shadow: 2px 3px 6px #c9c9c9;
+        padding-bottom: 8px;
+        h2{
+            text-align: center !important;
+            font-weight: 700;
+            font-size: 24px;
+        }
+        .title{
+            font-weight: 600;
+            font-size: 15px;
+        }
+        .text{
+            font-size: 14px;
+            color: #525252;
+        }
+    }
+    button{
+        background-color: black;
+        color: white;
+        padding: 6px;
+        padding-left: 19px;
+        padding-right: 19px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 1px 1px 2px black;
+        font-size: 15px;
+    }
+} 
+
+
+@media(max-width:500px){
+    .check-out{
+        .row{
+            .image {
+                width: 70px !important;
+                margin-top: 1.2rem;
+              }
+              .name {
+                font-size: 13.5px;
+            }
+            .price {
+                font-size: 17px;
+                color: grey;
+                &::first-letter {
+                    font-size: 20px;
+                    font-weight: 900;
+                    color: #31e0ba;
+                }
+            }
+            .btn{
+                font-size: 10px;
+            }
+            span{
+                font-size: 11px;
+            }
+        }
+    }
+}

@@ -1,9 +1,9 @@
-import React, { useContext, useState } from 'react'
-import { CartContext, CounterContext } from '../../config/context'
-import './menu-item.styles.scss'
+import React, { useContext } from 'react';
+import { CartContext, CounterContext } from '../../config/context';
+import './menu-item.styles.scss';
 
 const MenuItem = ({ item }) => {
-  const { name, imageUrl, price, sale, id } = item
+  const { name, imageUrl, price, sale } = item    // destructure values from item(prop)
   let count = useContext(CounterContext);
   let [cart, setCart] = useContext(CartContext);
 
@@ -24,7 +24,6 @@ const MenuItem = ({ item }) => {
       newCart.push(itemInCart)
     }
     setCart(newCart)
-    console.log('cart', cart)
   }
 
   return (
@@ -34,7 +33,7 @@ const MenuItem = ({ item }) => {
           <img
             className="card-img-top"
             src={imageUrl}
-            alt="Card image cap"
+            alt="Card cap"
           />
           <div className="card-body p-0 m-0 d-block text-center p-2">
             <i className="far fa-star"></i>

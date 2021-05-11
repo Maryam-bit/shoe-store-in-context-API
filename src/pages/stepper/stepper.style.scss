@@ -1,0 +1,17 @@
+.stepper-container{
+    padding-left: 10rem;
+    padding-right: 10rem;
+    .MuiStepIcon-root.MuiStepIcon-completed {
+        color: #4FDAB9;
+    }
+    .MuiStepIcon-root.MuiStepIcon-active {
+        color: #4FDAB9;
+    }
+}
+
+@media(max-width:800px){
+    .stepper-container{
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+    }
+}

@@ -4,33 +4,22 @@
     height: 653px;
     background-attachment: fixed;
     background-size: cover;
+    .img-content {
+      position: absolute;
+      top: 50%;
+      left: 17%;
+      transform: translate((-50%, -50%));
+      p {
+        font-size: 12px;
+        font-weight: 900;
+      }
+      h2 {
+        font-size: 45px;
+        font-weight: 900;
+      }
+    }
   }
-  .main-image .img-content {
-    position: absolute;
-    top: 50%;
-    left: 17%;
-    transform: translate((-50%, -50%));
-  }
-  .main-image .img-content p {
-    font-size: 12px;
-    font-weight: 900;
-  }
-  .main-image .img-content h2 {
-    font-size: 45px;
-    font-weight: 900;
-  }
-  .main-image .img-content button {
-    background-color: #1c1c1c;
-    border-radius: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    font-size: 12px;
-    letter-spacing: 1px;
-    color: white;
-  }
-
+  
   @media(max-width:900px){
     .main-image .img-content {
         left: 25%;
