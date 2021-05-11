@@ -1,4 +1,4 @@
-# SHOE STORE WEBSITE :fire::fire:
+# SHOE STORE WEBSITE
 
 This Shoe Store is Developed for practicing purpose
 
@@ -26,4 +26,4 @@ https://www.youtube.com/
 
 ## RUN LOCALLY 
 ##### Run this command to run this project locally: 
-** git clone _https://github.com/Maryam-bit/shoe-store-in-context.git_ **
+git clone https://github.com/Maryam-bit/shoe-store-in-context.git
