@@ -1,4 +1,4 @@
-# SHOE STORE WEBSITE :fire: :fire:
+# SHOE STORE WEBSITE :fire::fire:
 
 This Shoe Store is Developed for practicing purpose
 
