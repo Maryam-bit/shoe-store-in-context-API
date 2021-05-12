@@ -25,5 +25,5 @@ https://www.youtube.com/
  - Yup
 
 ## RUN LOCALLY 
-##### Run this command to run this project locally: 
+##### Run this command to run the project locally: 
 git clone https://github.com/Maryam-bit/shoe-store-in-context.git
