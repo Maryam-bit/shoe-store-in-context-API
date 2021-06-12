@@ -31,9 +31,7 @@ git clone https://github.com/Maryam-bit/shoe-store-in-context.git
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
     <img href="http://shoestore2004-.surge.sh/static/media/loggo.2c161c3e.png" alt="Logo" width="80" height="80">
-  </a>
 
   <h3 align="center">Shoe Store in Context Api</h3>
 
@@ -94,21 +92,6 @@ Following are the cutting edge technologies that I used in this project(shoe sto
 * Yup
 
 
-<!-- 
-<!-- GETTING STARTED -->
-## Getting Started
-
-* If you want to start this project locally in your system, 
-you have to clone this project by pressing the clone button given above this readme
-* Run this command to install node modules
-   ```sh
-     npm install
-   ```
-* Now start the project by running this command
-   ```sh
-     npm install
-   ```
- -->
 ### Installation
 
 1. one the repo
