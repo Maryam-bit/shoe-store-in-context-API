@@ -38,7 +38,7 @@ git clone https://github.com/Maryam-bit/shoe-store-in-context.git
   <p align="center">
     This Project is Just for Practicing purpose
     <br />
-    <a href="http://shoestore2004-.surge.sh/">View Demo</a>
+    <a href="https://ibb.co/q5G1gm5">View Demo</a>
   </p>
 </p>
 
