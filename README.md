@@ -103,8 +103,8 @@ Following are the cutting edge technologies that I used in this project(shoe sto
    npm install
    ```
 3. Start Project
-   ```JS
-  npm sart
+    ```sh
+    npm start
    ```
 
 
