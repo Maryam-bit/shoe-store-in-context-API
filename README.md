@@ -43,7 +43,7 @@ git clone https://github.com/Maryam-bit/shoe-store-in-context.git
 *** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
 *** See the bottom of this document for the declaration of the reference variables
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+*** http://shoestore2004-.surge.sh/static/media/loggo.2c161c3e.png
 -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
