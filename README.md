@@ -79,8 +79,11 @@ git clone https://github.com/Maryam-bit/shoe-store-in-context.git
 
 This Project is Made for practicing purpose.
  
+ 
 ## VIDEO
 https://www.youtube.com/
+
+
 
 ### BUILD WITH
 
@@ -93,6 +96,7 @@ Following are the cutting edge technologies that I used in this project(shoe sto
 * Material UI
 * Formik
 * Yup
+
 
 
 ### INSTALLATION
@@ -111,7 +115,7 @@ Following are the cutting edge technologies that I used in this project(shoe sto
    ```
 
 
-<!-- CONTACT -->
+
 ## CONTACT
 
 * Email - noormaryam530@gmail.com
