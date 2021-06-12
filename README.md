@@ -40,10 +40,9 @@ git clone https://github.com/Maryam-bit/shoe-store-in-context.git
 
 <!-- ABOUT THE PROJECT -->
 ## ABOUT THE PROJECT
-
+This Project is Made for practicing purpose.
 ![image](https://user-images.githubusercontent.com/56764144/117897040-5646e200-b2db-11eb-948a-996ad0bc781c.PNG)
 
-This Project is Made for practicing purpose.
  
  
 ## VIDEO
