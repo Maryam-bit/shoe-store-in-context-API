@@ -31,7 +31,7 @@ git clone https://github.com/Maryam-bit/shoe-store-in-context.git
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-    <img src="http://shoestore2004-.surge.sh/static/media/loggo.2c161c3e.png" alt="Logo" width="80" height="80">
+    <img src="https://ibb.co/q5G1gm5" alt="Logo" width="80" height="80">
 
   <h3 align="center">Shoe Store in Context Api</h3>
 
