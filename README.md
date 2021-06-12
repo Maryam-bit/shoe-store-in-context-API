@@ -31,7 +31,7 @@ git clone https://github.com/Maryam-bit/shoe-store-in-context.git
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <img src="http://www.sfu.ca/imgs2015/van.jpg" alt="Flowers in Chania">
+  <img src="https://ibb.co/q5G1gm5" alt="Flowers in Chania">
 
   <h3 align="center">Shoe Store in Context Api</h3>
 
