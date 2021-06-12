@@ -85,7 +85,7 @@ https://www.youtube.com/
 
 
 
-### BUILD WITH
+## BUILD WITH
 
 Following are the cutting edge technologies that I used in this project(shoe store)
 * React JS (Javascript framework)
@@ -99,7 +99,7 @@ Following are the cutting edge technologies that I used in this project(shoe sto
 
 
 
-### INSTALLATION
+## INSTALLATION
 
 1. one the repo
    ```sh
