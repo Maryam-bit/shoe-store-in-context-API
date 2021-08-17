@@ -1,12 +1,7 @@
-
- 
-![logo](https://user-images.githubusercontent.com/56764144/129732067-1362b174-e839-49ff-a6ee-8822d3cc5397.png)
-![loggo](https://user-images.githubusercontent.com/56764144/129732094-d5cb550f-f102-43f5-bbff-bd0d2bc61a83.png)
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/56764144/129731944-82af3aaa-7c2b-41b8-beb7-6ab1fe690508.jpg" alt="Flowers in Chania" width="200">
+  <img src="https://user-images.githubusercontent.com/56764144/129732067-1362b174-e839-49ff-a6ee-8822d3cc5397.png" alt="Flowers in Chania" width="200">
 
   <h1 align="center">SHOE STORE WEBSITE IN CONTEXT API</h1>
 </div>
